@@ -5,7 +5,7 @@
 This project implements and compares multiple Reinforcement Learning (RL) algorithms using Gymnasium environments.
 The objective is to train agents that learn optimal behavior through interaction with an environment and maximize cumulative rewards.
 
-This project is based on the following requirements: 
+The project includes implementation, training, and evaluation of value-based and policy-based methods, along with a comparison of their performance.
 
 ---
 
@@ -41,26 +41,47 @@ This project is based on the following requirements:
 
 ---
 
-## Results and Comparison
+## Results
 
-* Training rewards are recorded per episode
-* Performance comparison between:
+### DQN Agent
 
-  * DQN
-  * REINFORCE
-  * A2C
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nabillco/Reinforcement-Learning/main/DQN_episode.gif" width="600"/>
+</p>
 
-Evaluation focuses on:
+### A2C Agent
 
-* Learning speed
-* Stability
-* Final performance
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nabillco/Reinforcement-Learning/main/A2C_episode.gif" width="600"/>
+</p>
+
+### REINFORCE Agent
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nabillco/Reinforcement-Learning/main/REINFORCE_episode.gif" width="600"/>
+</p>
+
+---
+
+## Comparison
+
+### Agents Behavior Comparison
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nabillco/Reinforcement-Learning/main/all_agents_comparison.gif" width="700"/>
+</p>
+
+### Reward Curves
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Nabillco/Reinforcement-Learning/main/comparison_plot.png" width="700"/>
+</p>
 
 ---
 
 ## Project Structure
 
-```
+```bash
 Reinforcement-Learning/
 │
 ├── agents/           
@@ -83,6 +104,8 @@ cd Reinforcement-Learning
 
 python -m venv venv
 venv\Scripts\activate
+
+pip install -r requirements.txt
 ```
 
 ---
@@ -145,4 +168,3 @@ python compare.py
 ## License
 
 This project is intended for educational purposes.
-
